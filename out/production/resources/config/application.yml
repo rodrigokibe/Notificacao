@@ -6,19 +6,19 @@ spring:
     application:
         name: Notificacao
     mail:
-        from: eng.rodrigo.ribeiro.alves@gmail.com
-        host: ${EMAIL_SERVER_URL:smtp.gmail.com}
-        port: ${EMAIL_SERVER_PORT_PORT:587}
-        username: eng.rodrigo.ribeiro.alves@gmail.com
-        password: kib&1992
+        from: exemplo@gmail.com
+        host: smtp.gmail.com
+        port: 587
+        username: teste
+        password: teste
         properties:
             mail:
                 transport:
                     protocol: smtp
                 smtp:
-                    auth: ${EMAIL_SERVER_SMTP_AUTH:true}
-                    starttls.enable: ${EMAIL_SERVER_SMTP_STARTTLS:true}
-                    starttls.required: ${EMAIL_SERVER_SMTP_STARTTLS:true}
+                    auth: true
+                    starttls.enable: true
+                    starttls.required: true
                     ssl.enable: false
-                debug: ${EMAIL_SERVER_DEBUG:true}
+                debug: true
                 test-connection: true
